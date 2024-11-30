@@ -29,7 +29,7 @@ abstract class Car {
     }
 }
 
-// Класс Engine
+// Engine
 class Engine {
     private double volume;
     private String name;
@@ -54,7 +54,7 @@ class Engine {
     }
 }
 
-// Класс Wheel
+// Wheel
 class Wheel {
     private double diameter;
     private String seasonType;
@@ -79,7 +79,7 @@ class Wheel {
     }
 }
 
-// Класс Lock
+//  Lock
 class Lock {
     private String key;
 
@@ -92,7 +92,7 @@ class Lock {
     }
 }
 
-// Класс Driver
+// Driver
 class Driver {
     private int exp;
     private List<String> licenseCategories;
@@ -127,7 +127,7 @@ class Driver {
     }
 }
 
-// Основной класс
+// мэин класс
 public class auto {
     public static void main(String[] args) {
         // Создание движка, колеса и замка
@@ -135,7 +135,7 @@ public class auto {
         Wheel wheel = new Wheel(16.5, "Летние", "Goodyear(USA)");
         Lock lock = new Lock("key222");
 
-        // Создание машины (анонимный класс)
+        // машина (анон)
         Car car = new Car(engine, wheel, 4, "A", lock) {
             @Override
             public void start() {
@@ -143,10 +143,10 @@ public class auto {
             }
         };
 
-        // Создание водителя
+        // водила
         Driver driver = new Driver(3, Arrays.asList("A", "C"), Arrays.asList("key222", "key444"));
 
-        // Открытие машины и выполнение действий
+        // Действия
         if (driver.openCar(car, "key222")) {
             car.start();
             driver.drive(car);
