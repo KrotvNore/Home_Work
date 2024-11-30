@@ -3,7 +3,7 @@ package hmn2;
 import java.util.Arrays;
 
 // мэин класс
-public class auto {
+public class Auto {
     public static void main(String[] args) {
         // Создание движка, колеса и замка
         Engine engine = new Engine(2.0, "Chrysler Neon", "92");
