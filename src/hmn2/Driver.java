@@ -8,6 +8,7 @@ class Driver {
     private List<String> licenseCategories;
     private List<String> keys;
 
+
     public Driver(int exp, List<String> licenseCategories, List<String> keys) {
         this.exp = exp;
         this.licenseCategories = licenseCategories;
@@ -15,7 +16,7 @@ class Driver {
     }
 
     public boolean openCar(Car car, String key) {
-        if (keys.contains(key) && car.lock.unlock(key)) {
+        if (keys.contains(key) && car.getLock().unlock(key)) {
             System.out.println("Авто открыто!");
             return true;
         } else {
@@ -25,7 +26,7 @@ class Driver {
     }
 
     public void drive(Car car) {
-        if (licenseCategories.contains(car.licenseCategory)) {
+        if (licenseCategories.contains(car.getLicenseCategory())) {
             System.out.println("Водитель может управлять машиной");
         } else {
             System.out.println("Водитель НЕ может управлять машиной");
