@@ -9,7 +9,7 @@ abstract class Car { //Сделать приват и сделать через 
 
     public Engine getEngine() {
         return engine;
-    }
+    } //комент
 
     public void setEngine(Engine engine) {
         this.engine = engine;
