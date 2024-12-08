@@ -1,3 +1,3 @@
 Screenshot: 
 
-![Gitk Screenshot](./scsh.jpg)
+![Gitk Screenshot](./sc.jpg)
