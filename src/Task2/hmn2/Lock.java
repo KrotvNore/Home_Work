@@ -1,4 +1,4 @@
-package hmn2;
+package Task2.hmn2;
 
 //  Lock
 class Lock {

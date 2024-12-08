@@ -1,4 +1,4 @@
-package hmn2;
+package Task2.hmn2;
 
 abstract class Car { //Сделать приват и сделать через геттеры и сеттеры
     private Engine engine; //можно выделить по строчке через колосекор мышьки и shift

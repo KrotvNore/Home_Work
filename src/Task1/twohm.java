@@ -1,3 +1,5 @@
+package Task1;
+
 public class twohm {
     public static void main(String[] args){
     int[] nums ={10,2,3,4,5,6};

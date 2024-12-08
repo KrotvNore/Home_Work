@@ -1,3 +1,5 @@
+package Task1;
+
 public class two3hm {
     public static void main(String[] args) {
         String[] words = {"a", "b", "c", "d", null, "f", "g", "lmao"};
